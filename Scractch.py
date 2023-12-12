@@ -1,3 +1,4 @@
+#importing libraries
 from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
 from KMeans import KMeans
@@ -28,7 +29,7 @@ def main():
     km = KMeans(n_clusters=num_clusters, max_iter=max_iterations)
     y_means_train = km.fit_predict(X_train)
 
-    # Plotting the points for training set clusters
+   
     plot_clusters(X_train, y_means_train, "Training Set Clusters")
 
     # Assign clusters to the test set
